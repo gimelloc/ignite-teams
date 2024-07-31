@@ -1,9 +1,16 @@
-import * as S from './styles';
+import { Header } from '@components/Header';
+import { Container } from './styles';
+import Highlight from '@components/Highligth';
+import { GroupCard } from '@components/GroupCard';
 
 export function Groups() {
   return (
-    <S.Container>
-      Olá React
-    </S.Container>
+    <Container>
+      <Header showBackButton />
+
+      <Highlight title='Turmas' subtitle='Jogue com a sua turma' />
+
+      <GroupCard title='Galera do ignite' />
+    </Container>
   );
 }
