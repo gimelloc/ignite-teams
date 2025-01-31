@@ -12,7 +12,7 @@ export function Header({ showBackButton = false }: Props){
             {showBackButton && <BackButton>
                 <BackIcon />
             </BackButton>}
-            <Logo source={logoImg} />
+            <Logo source={require('../../assets/logo.png')} />
         </Container>
     )
 }
